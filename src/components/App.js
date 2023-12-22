@@ -25,7 +25,7 @@ function App() {
         <SubscribePage email={email} onChange={handleEmailChange} onSubmit={handleOnSubmit}/>
         <img src={Illustration} alt="illustration" />
       </div>}
-      {formSubmitted && <SuccessPage />}
+      {formSubmitted && <SuccessPage email={email} />}
     </div>
   )
 }
