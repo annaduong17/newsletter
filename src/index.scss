@@ -79,11 +79,11 @@ ul {
 
 .text-content {
   width: 30vw;
-  margin: 3vw;
+  margin: 5vw 3vw;
 }
 
-.illustration {
-  max-width: 25vw;
+#desktop {
+  max-width: 27vw;
   height: auto;
   border-radius: 1vw;
   margin: 1.5vw;
@@ -91,6 +91,10 @@ ul {
 
 .li-icon {
   margin-right: 1vw;
+}
+
+#success-icon {
+  width: 5vw;
 }
 
 button {
@@ -122,6 +126,7 @@ input {
   border-radius: 0.5vw;
   padding: 1vw;
   background-color: $lightTomato;
+  font-size: 1.2vw;
 
   &::placeholder {
     color: $tomato;
@@ -130,16 +135,36 @@ input {
 @media (max-width: 800px) {
   .main-content {
     flex-direction: column;
-
-    .illustration {
-      order: 1;
-      
-    }
+    height: 100vh;
+    border-radius: 0;
 
     .text-content {
       order: 2;
+      height: 100vh;
     }
   }
 
+  #mobile {
+    order: 1;
+    width: 36vw;
+  }
 
+  .container {
+    background-color: $gray;
+  }
+
+  input {
+    border: 1px solid $gray;
+    background-color: $white;
+
+    &::placeholder {
+      color: $gray;
+    }
+  }
+
+  #dismiss-content {
+    button {
+      margin-top: 40vh;
+    }
+  }
 }

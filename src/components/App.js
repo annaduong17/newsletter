@@ -35,7 +35,7 @@ function App() {
     <div className='container flex-center'>
       {formSubmitted ? <SuccessPage email={email} /> : <div className='main-content'>
         <SubscribePage email={email} onChange={handleEmailChange} onSubmit={handleOnSubmit}/>
-        {isDesktop ? <img className='illustration' src={IllustrationDesktop} alt="illustration" /> : <img className='illustration' src={IllustrationMobile} alt="illustration" />}
+        {isDesktop ? <img id='desktop' className='illustration' src={IllustrationDesktop} alt="illustration" /> : <img id='mobile' className='illustration' src={IllustrationMobile} alt="illustration"/>}
       </div>}
     </div>
   )
