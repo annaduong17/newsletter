@@ -21,9 +21,9 @@ function App() {
 
   return(
     <div className='container flex-center'>
-      {showSubscribe && <div className='main-content flex'>
+      {showSubscribe && <div className='main-content'>
         <SubscribePage email={email} onChange={handleEmailChange} onSubmit={handleOnSubmit}/>
-        <img src={Illustration} alt="illustration" />
+        <img id='illustration' src={Illustration} alt="illustration" />
       </div>}
       {formSubmitted && <SuccessPage email={email} />}
     </div>

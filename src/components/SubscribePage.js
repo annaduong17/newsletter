@@ -8,15 +8,15 @@ export default function SubscribePage({ email, onChange, onSubmit }) {
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
       <ul>
         <div className='bullet'>
-          <img src={ListIcon} alt="icon" />
+          <img className='li-icon' src={ListIcon} alt="icon" />
           <li>Product discovery and building what matters</li>
         </div>
         <div className='bullet'>
-          <img src={ListIcon} alt="icon" />
+          <img className='li-icon' src={ListIcon} alt="icon" />
           <li>Measuring to ensure updates are a success</li>
         </div>
         <div className='bullet'>
-          <img src={ListIcon} alt="icon" />
+          <img className='li-icon' src={ListIcon} alt="icon" />
           <li>And much more!</li>
         </div>
       </ul>
